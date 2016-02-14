@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Tutorial : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Tutorial</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alu0100811933/Tutorial">View on GitHub</a>
+
+          <h1 id="project_title">Tutorial</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alu0100811933/Tutorial/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alu0100811933/Tutorial/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="tutorial-nodejs-express-atom-pandoc-github-desktop" class="anchor" href="#tutorial-nodejs-express-atom-pandoc-github-desktop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial NodeJS, Express, Atom, Pandoc, GitHub Desktop</h1>
+
+<h2>
+<a id="nodejs" class="anchor" href="#nodejs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NodeJS</h2>
+
+<p><strong>NodeJS</strong> es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en el lenguaje de programación ECMAScript, con I/O de datos en una arquitectura orientada a eventos basado en V8 de Google.</p>
+
+<p>Para instalar NodeJS vamos a su <a href="https://nodejs.org/en/">página</a> de instalación y siguiendo las instrucciones del asistente de instalación completamos el proceso para tener NodeJS en nuestro ordenador:</p>
+
+<p><img src="http://i68.tinypic.com/2gt575f.jpg" alt="" title="Node"></p>
+
+<h2>
+<a id="express" class="anchor" href="#express" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Express</h2>
+
+<p><strong>Express</strong> es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles. Para instalarlo en nodeJS lo haremos con el siguiente comando:</p>
+
+<pre><code>$ npm install express --save
+</code></pre>
+
+<p>Una vez instalado veremos esto:</p>
+
+<p><img src="http://i68.tinypic.com/2lctm6u.jpg" alt="" title="Express"></p>
+
+<p>Y ya estamos listos para hacer uso de él.</p>
+
+<h2>
+<a id="atom" class="anchor" href="#atom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Atom</h2>
+
+<p><a href="https://atom.io/">Atom</a> es un <strong>editor de texto</strong> que puedes modificar y personalizar a tu gusto, orientado a escribir código en una gran variedad de lenguajes. Una vez descargado el paquete de instalación es cuestión de sólo seguir el asistente para instalar satisfactoriamente el programa.</p>
+
+<p><img src="http://i67.tinypic.com/w7ig3t.jpg" alt="" title="Atom"></p>
+
+<h2>
+<a id="pandoc" class="anchor" href="#pandoc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pandoc</h2>
+
+<p><a href="http://pandoc.org/">Pandoc</a> es un conversor universal de documentos y nos permite cambiar entre una gran variedad de formatos de documentos de texto. Nosotros lo usaremos para convertir nuestro código Markdown en html.</p>
+
+<p>Esta conversión se realiza en la <strong>consola de windows</strong> (en nuestro caso) y una vez en la carpeta donde se encuentra nuestro fichero markdown, la sintaxis es la siguiente:</p>
+
+<pre><code>$ pandoc -f formatodeentrada -t formatodesalida nombrefichero.md -o nombreficherosalida.html
+</code></pre>
+
+<p>En nuestro caso usaremos la siguinte línea de consola:</p>
+
+<pre><code>$ pandoc -f markdown -t html tutorial.md -o tutorial.html
+</code></pre>
+
+<p>Si no pusiéramos el fichero de salida ya sea en .html o en otro tipo de archivo, el pandoc nos mostraría la conversión por consola.</p>
+
+<h2>
+<a id="github-desktop" class="anchor" href="#github-desktop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Github Desktop</h2>
+
+<p><strong>Github Desktop</strong> es una aplicación del servicio de repositorios online Git para poder tener de manera visual una estructura completa o parcial de nuestros repositorios de la nube pudiendo clonarlos y realizar trabajo en local. Posee distintas cualidades que hacen que el trabajo se pueda realizar más rápido o al menos de una forma más sencilla y atractiva que por consola, como puede ser la realización de commits. Para empezar a utilizar <a href="https://desktop.github.com/">GithubDesktop</a> solo tenemos que descargarnos el instalador y seguir los pasos del asistente.</p>
+
+<p>Una vez vinculado el programa con nuestra cuenta de GitHub podemos empezar, por ejemplo, por <strong>clonar</strong> uno de nuestros repositorios online a local:</p>
+
+<p><img src="http://i68.tinypic.com/kanrqo.jpg" alt="" title="Clonación"></p>
+
+<p>Cuando realicemos una modificación en alguno de los archivos locales nos aparecerá que dicho archivo ha sido modificado, cómo lo ha sido, y podremos realizar un commit y a posterior podremos sincronizar nuestro repositorio local con el de la plataforma online:</p>
+
+<p><img src="http://i68.tinypic.com/2z69u0w.jpg" alt="" title="Modificación"></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Tutorial maintained by <a href="https://github.com/alu0100811933">alu0100811933</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
